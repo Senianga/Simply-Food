@@ -1,0 +1,27 @@
+{
+  "name": "open_gulp",
+  "version": "1.0.0",
+  "description": "New simple food project",
+  "main": "2024 03 03",
+  "devDependencies": {
+    "browser-sync": "^3.0.2",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.7.1",
+    "sass": "^1.71.1"
+  },
+  "scripts": {
+    "test": "mentor Tania"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Simple Food"
+  },
+  "author": "Alvydas Kriauza",
+  "license": "ISC"
+}
