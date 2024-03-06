@@ -1,0 +1,32 @@
+@media (hover:hover) {
+  .header__nav-link:hover {
+    color: $accent;
+  }
+
+  .header__user-link:hover {
+    border-radius: 5px;
+    background-color: $accent;
+    stroke: $secondary;
+
+    .header__user-link-svg--search {
+      display: block;
+      stroke: $secondary;
+      fill: none;
+    }
+
+    .header__user-link-svg--cart {
+      display: block;
+      stroke: $secondary;
+      fill: none;
+    }
+
+    .header__user-link--numb {
+      background-color: $secondary;
+      color: $accent;
+    }
+  }
+
+
+
+
+}

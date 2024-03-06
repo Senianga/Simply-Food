@@ -1,12 +1,43 @@
 
 
 body {
-  background-color: #fff;
+  @extend %rubik-400;
+  background-color: $bg;
+  color: $defalt;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .container {
   width: 1200px;
+  margin: 0 auto;
   padding: 0 15px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: $secondary;
+  border-radius: 6px;
+  padding: 12px 32px;
+  background-color: $accent;
 }
 
 

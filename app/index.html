@@ -1,49 +1,194 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/images/favicon/site.webmanifest">
-  <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#ffffff">
-  <title>Simple-Food Еда-Срочно!</title>
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/images/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Simple-Food Еда-Срочно!</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!------------ header -------->
 
-<!------------ header -------->
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a href="#" class="header__logo">
+            <span class="sr-only"
+              >Добро пожаловать на страницу Simple Food!</span
+            >
+            <img
+              class="logo"
+              src="images/logo.png"
+              alt="Логотип"
+              width="200"
+              height="39"
+            />
+          </a>
+          <div class="header__nav-left">
+            <ul class="header__nav">
+              <li class="header__nav-item">
+                <a class="header__nav-link header__nav-link-active" href="#"
+                  >Главная</a
+                >
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Блюда</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header__user-nav">
+              <li class="header__user-item">
+                <a class="header__user-link search" href="#">
+                  <svg
+                    class="header__user-link-svg--search"
+                    width="21"
+                    height="21"
+                    viewBox="0 0 21 21"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <ellipse
+                      cx="9.76657"
+                      cy="9.65987"
+                      rx="8.98856"
+                      ry="8.88424"
+                      stroke
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M16.0183 16.3004L19.5423 19.7745"
+                      stroke
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li class="header__user-item">
+                <a class="header__user-link cart" href="#">
+                  <svg
+                    class="header__user-link-svg--cart"
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 1L3.08 1.35582L4.04301 12.6957C4.12001 13.6218 4.90301 14.3325 5.84301 14.3295H16.752C17.649 14.3315 18.41 13.6791 18.537 12.8014L19.486 6.31954C19.592 5.59505 19.083 4.92294 18.351 4.81817C18.287 4.80927 3.414 4.80433 3.414 4.80433"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M12.375 8.48737H15.1479"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.4043 17.7856C5.70527 17.7856 5.94824 18.0269 5.94824 18.3236C5.94824 18.6213 5.70527 18.8625 5.4043 18.8625C5.10333 18.8625 4.86035 18.6213 4.86035 18.3236C4.86035 18.0269 5.10333 17.7856 5.4043 17.7856Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.6846 17.7856C16.9856 17.7856 17.2296 18.0269 17.2296 18.3236C17.2296 18.6213 16.9856 18.8625 16.6846 18.8625C16.3836 18.8625 16.1406 18.6213 16.1406 18.3236C16.1406 18.0269 16.3836 17.7856 16.6846 17.7856Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="header__user-link--numb">4</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="intro__section">
+        <div class="container">
+          <div class="intro">
+            <div class="intro__introduction">
+              <h1 class="title">
+                Доставка
+                <span class="title__dec">за 15 минут</span>
+              </h1>
+              <p class="title__desc">
+                Самый быстрый сервис доставки еды в вашем городе. Не уложимся в
+                срок - доставка за наш счёт
+              </p>
+              <a class="title__order btn" href="#">Заказать</a>
+              <a class="title__detales" href="#">Подробнее</a>
+            </div>
+            <div class="intro__grafica">
+              <span class="sr-only">Быстрая доставка еды на скутере</span>
+              <img
+                src="images/main_intro.png"
+                alt="Скутер доставка"
+                class="main__intro"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="food__section">
+        <div class="container">
+          <h2 class="food__title">
+            Популярные категории
+          </h2>
+          <ul class="food__categories">
+            <li class="food__categorie">
+              <a class="food__categorie-link" href="#"> </a>
+            </li>
+            <li class="food__categorie">
+              <a class="food__categorie-link" href="#"> </a>
+            </li>
+            <li class="food__categorie">
+              <a class="food__categorie-link" href="#"> </a>
+            </li>
+            <li class="food__categorie">
+              <a class="food__categorie-link" href="#"> </a>
+            </li>
+            <li class="food__categorie">
+              <a class="food__categorie-link" href="#"> </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-<header class="header">
-  <div class="container">
-    <nav class="header__nav">
-      <a href="#" class="header__logo">
-        <img class="logo" src="images/logo.png" alt="Логотип" >
-      </a>
-      <ul class="header__nav">
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="#">Главная</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="#">Блюда</a>
-        </li>
-        <li class="header__nav-item">
-          <a class="header__nav-link" href="#">Контакты</a>
-        </li>
-      </ul>
-      <ul class="header__user-nav">
-        <a class="header__user-link" href="#"></a>
-        <a class="header__user-link" href="#">
-          <div class="header__user-link--numb">4</div>
-        </a>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-  <script src="js/main.min.js"></script>
-</body>
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
