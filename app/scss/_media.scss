@@ -26,6 +26,20 @@
     }
   }
 
+  .title__order:hover {
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7), 0 5px 12px 0 rgba(255, 104, 56, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: $accent;
+  }
+
+  .title__detales:hover {
+    text-decoration: none;
+    color: $accent;
+  }
+
+
+
+
 
 
 
