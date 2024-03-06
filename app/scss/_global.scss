@@ -2,7 +2,7 @@
 
 body {
   @extend %rubik-400;
-  background-color: $bg;
+  background-color: $silver;
   color: $defalt;
   font-size: 20px;
   font-weight: 400;
@@ -40,4 +40,7 @@ body {
   background-color: $accent;
 }
 
+button {
+  cursor: pointer;
+}
 

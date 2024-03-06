@@ -1,4 +1,8 @@
 @media (hover:hover) {
+  .logo:hover {
+    opacity: 0.8;
+  }
+
   .header__nav-link:hover {
     color: $accent;
   }
@@ -36,6 +40,15 @@
     text-decoration: none;
     color: $accent;
   }
+
+  .food__categorie-link:hover {
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+    background: rgba(255, 122, 80, 0.1);
+    color: $accent;
+    fill: $accent;
+  }
+
 
 
 
