@@ -32,7 +32,7 @@ li,
 figure,
 figcaption,
 blockquote,
-dl,F
+dl,
 dd {
   margin: 0;
 }
@@ -47,6 +47,7 @@ button,
 textarea,
 select {
   font: inherit;
+  border: none;
 }
 
 a,
@@ -59,4 +60,7 @@ textarea {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
+
+
