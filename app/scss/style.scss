@@ -87,20 +87,22 @@
 
 /* ------------------intro--------------- */
 
-.intro {
-  padding-bottom: 120px;
-}
-
-  &__items {
+.intro__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-  &__introduction {
+.intro__introduction {
     max-width: 450px;
     width: 100%;
   }
 }
+
+.intro__grafica {
+  max-width: 560px;
+  width: 100%;
+}
+
 
 .title {
   font-weight: 500;
@@ -108,7 +110,7 @@
   line-height: 1.3;
   text-transform: uppercase;
   color: $dblue;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 
   &__dec {
     color: $accent;
@@ -137,6 +139,10 @@
     border 0.5s ease, border-radius 0.5s ease;
   }
 }
+
+/* ------/intro------ */
+
+/* ----------------------food--------------------- */
 
 .food__title {
   font-weight: 500;
@@ -243,6 +249,151 @@
   transition: text-decoration 0.5s ease, color 0.5s ease, border 0.5s ease,
   border-radius 0.5s ease, text-shadow 0.5s ease;
 }
+
+/* ---------------------- /food --------------------- */
+
+/* ---------------------- service --------------------- */
+
+.service {
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__grafica {
+    max-width: 440px;
+    width: 100%;
+    height: 585px;
+    margin-right: 120px;
+  }
+
+  &__content {
+    max-width: 470px;
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+
+  }
+}
+  .service__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $dblue;
+    margin-bottom: 30px;
+  }
+
+  .service__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service__list:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .service__item {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+
+  .service__item svg {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  .service__item:last-child {
+    margin-bottom: 30px;
+  }
+
+/* ---------------------- /service --------------------- */
+
+/* ---------------------- partners --------------------- */
+
+.subtitle {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 130%;
+  color: $dblue;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.partners__items {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.4%;
+  column-gap: 10px;
+  row-gap: 28px;
+}
+
+.partners__card {
+  background-color: $secondary;
+  max-width: 370px;
+  width: 100%;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.partners__card:hover {
+  box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.5);
+}
+
+.partners__good {
+  border-radius: 10px 10px 0 0;
+  margin-bottom: 15px;
+}
+
+.partners__name {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  color: $defalt;
+  margin-bottom: 19px;
+  padding-left: 20px;
+}
+
+.partners__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.partners__open {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.67;
+  color: $dblue;
+  margin-right: auto;
+}
+
+svg {
+  margin-right: 10px;
+}
+
+.partners__link {
+  padding: 6px 32px;
+  border-radius: 20px;
+}
+
+.partners__link svg {
+  margin: 0;
+}
+
+/* ---------------------- /partners --------------------- */
+
+/* ---------------------- footer --------------------- */
 
 .footer {
   padding-bottom: 70px;
@@ -411,5 +562,7 @@
   color: $defalt;
   border-top: 1px solid $gray;
 }
+
+/* ---------------------- /footer --------------------- */
 
 
