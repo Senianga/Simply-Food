@@ -44,7 +44,7 @@
           <ul class="navigation">
             <li class="navigation__item">
               <a
-                class="navigation__link state navigation__link--active"
+                class="header__nav-item state navigation__link--active"
                 href="#"
                 >Главная</a
               >
@@ -60,71 +60,18 @@
             <li class="user__nav-item">
               <span class="sr-only">Ссылка на поиск по сайту</span>
               <button class="user__nav-link animation search" href="#">
-                <svg
-                  class="user__nav-link-svg--search animation__user-link-svg--search"
-                  width="21"
-                  height="21"
-                  viewBox="0 0 21 21"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <ellipse
-                    cx="9.76657"
-                    cy="9.65987"
-                    rx="8.98856"
-                    ry="8.88424"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16.0183 16.3004L19.5423 19.7745"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                <svg class="user__nav-svg-search">
+                  <use xlink:href="images/sprite.svg#icon-search" viewBox="0 0 21 21"></use>
                 </svg>
               </button>
             </li>
             <li class="user__nav-item">
               <span class="sr-only">Ссылка на корзину выбранных вкусняшек</span>
               <button class="user__nav-link animation cart" href="#">
-                <svg
-                  class="user__nav-link-svg--cart animation__user-link-svg--cart"
-                  width="21"
-                  height="20"
-                  viewBox="0 0 21 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1L3.08 1.35582L4.04301 12.6957C4.12001 13.6218 4.90301 14.3325 5.84301 14.3295H16.752C17.649 14.3315 18.41 13.6791 18.537 12.8014L19.486 6.31954C19.592 5.59505 19.083 4.92294 18.351 4.81817C18.287 4.80927 3.414 4.80433 3.414 4.80433"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12.375 8.48737H15.1479"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M5.4043 17.7856C5.70527 17.7856 5.94824 18.0269 5.94824 18.3236C5.94824 18.6213 5.70527 18.8625 5.4043 18.8625C5.10333 18.8625 4.86035 18.6213 4.86035 18.3236C4.86035 18.0269 5.10333 17.7856 5.4043 17.7856Z"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16.6846 17.7856C16.9856 17.7856 17.2296 18.0269 17.2296 18.3236C17.2296 18.6213 16.9856 18.8625 16.6846 18.8625C16.3836 18.8625 16.1406 18.6213 16.1406 18.3236C16.1406 18.0269 16.3836 17.7856 16.6846 17.7856Z"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
+                <svg class="user__nav-svg-cart">
+                  <use xlink:href="images/sprite.svg#icon-cart"></use>
                 </svg>
-                <span class="user__nav-link--numb animation__user-link--numb">
+                <span class="user__nav-link--numb animation__user-link-numb">
                   4
                 </span>
               </button>
@@ -741,7 +688,91 @@
 
       <!-- ---------------- review ------------------------ -->
 
-
+      <section class="review">
+        <div class="container">
+          <h2 class="subtitle">
+            Отзывы клиентов
+          </h2>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <figure class="slider__testimonial">
+                <img class="slider__img"
+                src="images/review-img.jpg" alt="Довольный клиент" >
+                <figcaption class="slider__content">
+                  <blockquote class="slider__review">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
+                    Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
+                    Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                  </blockquote>
+                  <span class="slider__author">
+                    Дарья
+                  </span>
+                  <span class="slider__note">
+                   Ценитель вкусной еды
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="slider__wrapper">
+              <figure class="slider__testimonial">
+                <img class="slider__img"
+                src="images/icons/gc10322.jpg" alt="Довольный клиент" >
+                <figcaption class="slider__content">
+                  <blockquote class="slider__review">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
+                    Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
+                    Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                  </blockquote>
+                  <span class="slider__author">
+                    Мария
+                  </span>
+                  <span class="slider__note">
+                    Ценитель вкусной еды
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="slider__wrapper">
+              <figure class="slider__testimonial">
+                <img class="slider__img"
+                src="images/Happy-Customer-300x300.jpg" alt="Довольный клиент" >
+                <figcaption class="slider__content">
+                  <blockquote class="slider__review">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
+                    Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
+                    Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                  </blockquote>
+                  <span class="slider__author">
+                    Изабелла
+                  </span>
+                  <span class="slider__note">
+                    Ценитель вкусной еды
+                  </span>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="slider__wrapper">
+              <figure class="slider__testimonial">
+                <img class="slider__img"
+                src="images/lena.jpg" alt="Довольный клиент" >
+                <figcaption class="slider__content">
+                  <blockquote class="slider__review">
+                    SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе.
+                    Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны.
+                    Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                  </blockquote>
+                  <span class="slider__author">
+                    Лена
+                  </span>
+                  <span class="slider__note">
+                    Ценитель вкусной еды
+                  </span>
+                </figcaption>
+              </figure>
+          </div>
+         </div>
+        </div>
+      </section>
 
       <!-- ---------------- /review ------------------------ -->
 
@@ -758,8 +789,10 @@
                 Рестораны, которые вы любите - в ваших руках.
                 Устанавливайте приложение и заказывайте еду в любом удобном месте.
               </p>
-              <a class="app__media" href="#" style="background-image: url('images/app-store.jpg'); width: 120px; height: 40px;"></a>
-              <a class="app__media" href="#" style="background-image: url('images/google-play.jpg'); width: 120px; height: 40px;"></a>
+              <a class="app__media" href="https://www.apple.com/app-store/" style="background-image: url('images/app-store.jpg'); width: 120px; height: 40px;"
+                target="_blank" rel="noopener noreferrer"></a>
+              <a class="app__media" href="https://play.google.com/store/games" style="background-image: url('images/google-play.jpg'); width: 135px; height: 40px;"
+              target="_blank" rel="noopener noreferrer"></a>
             </div>
             <div class="app__grafica" style="background-image: url('images/app.jpg');"></div>
           </div>

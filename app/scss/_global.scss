@@ -127,26 +127,18 @@ a {
 
 /* user */
 .animation {
-  transition: background-color 0.3s ease, stroke 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, stroke 0.3s ease, color 0.3s ease;
 
     &:hover {
-      border-radius: 5px;
       background-color: $accent;
       stroke: $secondary;
 
-        .animation__user-link-svg--search {
-          display: block;
+        .animation__user-link-svg-cart {
           stroke: $secondary;
-          fill:none;
         }
 
-        .animation__user-link-svg--cart {
-          display: block;
-          stroke: $secondary;
-          fill: none;
-        }
-
-        .animation__user-link--numb {
+        .animation__user-link-numb {
           background-color: $secondary;
           color: $accent;
           fill: none;
@@ -159,19 +151,19 @@ a {
       box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
       background: rgba(255, 122, 80, 0.1);
 
-      .animation__user-link-svg--search {
+      .animation__user-link-svg-search {
         display: block;
         stroke: $dblue;
         fill:none;
       }
 
-      .animation__user-link-svg--cart {
+      .animation__user-link-svg-cart {
         display: block;
         stroke: $dblue;
         fill: none;
       }
 
-      .animation__user-link--numb {
+      .animation__user-link-numb {
         background-color: $accent;
         color: $secondary;
         fill: none;
@@ -184,18 +176,18 @@ a {
       background: #fff2ed;
       box-shadow: 0 0 0 0 transparent;
 
-      .animation__user-link-svg--search {
+      .animation__user-link-svg-search {
         display: block;
         stroke: $dblue;
         fill: none;
 
       }
 
-      .animation__user-link-svg--cart {
+      .animation__user-link-svg-cart {
         display: block;
 
 
-      .animation__user-link--numb {
+      .animation__user-link-numb {
         background-color: $accent;
         color: $secondary;
 
@@ -241,12 +233,17 @@ a {
   color: $defalt;
 }
 
-.intro,
 .service,
+.food__section,
 .partners,
 .app,
+.review,
 .footer {
   padding: 60px 0;
+}
+
+.intro {
+  padding-bottom: 60px;
 }
 
 
