@@ -32,7 +32,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 45px;
-  margin-right: 42px;
+  margin-right: 53px;
 
   &__link--active {
     color: $accent;
@@ -43,8 +43,9 @@
   display: block;
   border-radius: 5px;
   display: flex;
-  column-gap: 12px;
+  column-gap: 10px;
   align-items: center;
+  margin-right: 5px;
 
   &__nav-item {
     display: flex;
@@ -52,6 +53,9 @@
   }
 
   &__nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
     background-color: transparent;
     border: none;
     position: relative;
@@ -95,7 +99,7 @@
       fill: none;
       stroke: $defalt;
       stroke-width: 1.5px;
-
+      transition: stroke 0.3s ease fill 0.3s ease;
     }
 
 
@@ -115,7 +119,7 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    top: 9px;
+    top: 7px;
     left: 27px;
     background-color: $accent;
     border-radius: 50%;
@@ -153,7 +157,8 @@
   line-height: 1.3;
   text-transform: uppercase;
   color: $dblue;
-  margin-bottom: 20px;
+  margin-top: -13px;
+  margin-bottom: 22px;
 
   &__dec {
     color: $accent;
@@ -161,12 +166,15 @@
   }
 
   &__description {
-  margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 26px;
   }
 
   &__order {
     margin-right: 32px;
-    transition: color 1s ease, box-shadow 1s ease, background 1s ease;
+    transition: color 0.3ss ease, box-shadow 0.3ss ease, background 0.3ss ease;
   }
 
   &__detales {
@@ -175,11 +183,9 @@
     line-height: 1.5;
     font-weight: 400;
     font-size: 20px;
-    border: 2px solid transparent;
     text-decoration-skip-ink: none;
-    text-align: center;
-    transition: text-decoration 0.5s ease, color 0.5s ease,
-    border 0.5s ease, border-radius 0.5s ease;
+    transition: text-decoration 0.3s ease, color 0.3s ease,
+    border 0.3s ease, border-radius 0.3s ease;
   }
 }
 
@@ -215,10 +221,15 @@
     fill: black;
     box-shadow: 0px 0px 0px 1px $dsilver;
     background: $secondary;
+
+    svg {
+      width: 44px;
+      height: 44px;
+    }
   }
 }
 
-.active {
+.foods__categorie-link--active {
   border: none;
   background-color: $accent;
   color: $secondary;
@@ -270,6 +281,7 @@
       }
 
       &--button {
+        display: block;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.3;
@@ -319,6 +331,7 @@
   &__content {
     max-width: 470px;
     width: 100%;
+    margin-bottom: 16px;
   }
 
   &__title {
@@ -326,7 +339,6 @@
     font-size: 36px;
     line-height: 1.3;
     margin-bottom: 30px;
-
   }
 }
   .service__text {
@@ -338,29 +350,52 @@
   }
 
   .service__list {
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 32px;
   }
 
-  .service__list:not(:last-child) {
-    margin-bottom: 20px;
-  }
 
   .service__item {
     display: flex;
     margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
     align-items: center;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    svg {
+      display: inline-block;
+      margin-right: 30px;
+      width: 34px;
+      height: 34px;
+      fill: $accent;
+    }
+
+    .service__delivery {
+      display: inline-block;
+      margin-right: 30px;
+      width: 34px;
+      height: 34px;
+      fill: #0af;
+    }
+
+    .service__restorant {
+      display: inline-block;
+      margin-right: 30px;
+      width: 34px;
+      height: 34px;
+      fill: #f22;;
+    }
   }
 
-  .service__item svg {
-    display: inline-block;
-    margin-right: 30px;
-  }
 
-  .service__item:last-child {
-    margin-bottom: 30px;
-  }
 
 /* ---------------------- /service --------------------- */
 
@@ -387,102 +422,95 @@
   max-width: 370px;
   width: 100%;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
 
-.partners__card:hover {
-  box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.5);
-}
+  &:hover {
+    box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.5);
+  }
 
-.partners__good {
-  border-radius: 10px 10px 0 0;
-  margin-bottom: 15px;
-}
+  .partners__good {
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px;
+  }
 
-.partners__name {
-  display: block;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 130%;
-  color: $defalt;
-  margin-bottom: 19px;
-  padding-left: 20px;
-}
+  .partners__name {
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: $defalt;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
 
-.partners__info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  margin-bottom: 20px;
-}
+  .partners__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
 
-.partners__open {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.67;
-  color: $dblue;
-  margin-right: auto;
-}
+  .partners__clock {
+    width: 22px;
+    height: 22px;
+  }
 
-.partners__link {
-  padding: 6px 32px;
-  border-radius: 20px;
-}
+  .partners__open {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dblue;
+    margin-left: 10px;
+    margin-right: auto;
+  }
 
-.partners__link svg {
-  margin: 0;
+  .partners__open {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.67;
+    color: $dblue;
+    margin-right: auto;
+  }
+
+  .partners__link {
+    padding: 6px 32px;
+    border-radius: 20px;
+
+    &:hover {
+      background: $secondary;
+      padding: 6px 12px 6px 52px;
+
+      svg {
+        background: $secondary;
+        fill: $accent;
+      }
+    }
+
+    &:focus {
+      svg {
+        background: #fff2ed;
+        fill: $accent;
+      }
+    }
+
+    &:active {
+      padding: 6px 32px;
+      background-color: #fff2ed;
+      svg {
+        background-color: #fff2ed;
+        fill: $accent;
+      }
+    }
+
+    svg {
+      width: 14px;
+      height: 12px;
+      fill: $secondary;
+    }
+  }
 }
 
 /* ---------------------- /partners --------------------- */
-
-/* ---------------------- app --------------------- */
-
-.app {
-  &__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__description {
-    max-width: 540px;
-    width: 100%;
-  }
-
-  &__subtitle {
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 130%;
-    color: $dblue;
-    margin-bottom: 45px;
-  }
-
-  &__description {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    color: $defalt;
-    margin-bottom: 30px;
-  }
-
-  &__media {
-    display: inline-block;
-    width: 120px;
-    height: 40;
-  }
-
-  &__media:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &__grafica {
-    max-width: 570px;
-    width: 100%;
-    height: 380px;
-  }
-}
-
-/* ---------------------- /app --------------------- */
 
 /* --------------------- review----------------------- */
 
@@ -492,32 +520,77 @@
   width: 100%;
   margin: 0 auto;
 
-  button.slick-prev {
-    /*position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 17px;*/
+  button.slick-prev.slick-arrow {
+    position: absolute;
+    bottom: -11px;
+    left: 386px;
+    background-image: url('../images/icons/icon-prev.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 17px;
+    height: 17px;
+    padding: 17px;
+    border-radius: 50%;
+    box-shadow:  0 0 0 3px $gray;
+    background-color: transparent;
     font-size: 0;
-    /*border-radius: 50%;
-    box-shadow: 0 0 0 3px $gray;
-    background-color: transparent; */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease,
+                background-image 0.3s ease;
 
-    /* &:hover {
-      /* border: 3px solid rgb(255, 174, 148);
-      background: rgb(255, 242, 237);
-      z-index: 0;
-    } */
+    &:hover {
+      box-shadow:  0 0 0 3px #ffae94;
+      background-color: #fff2ed;
+      background-image: url(../images/icons/icion-prev-hover.svg);
+    }
+
+    &:focus-visible {
+      border: 3px solid $gray;
+      box-shadow:  0 0 0 3px rgba(255, 104, 56, 0.7);
+    }
+
+    &:active {
+      background-color: rgb(255, 242, 237);
+      box-shadow: none;
+      background-image: url('../images/icons/icion-prev-hover.svg');
+    }
+
   }
 
-  button.slick-next {
+
+  button.slick-next.slick-arrow {
     position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 17px;
-    font-size: 0;
+    bottom: -11px;
+    right: 386px;
+    background-image: url('../images/icons/icon-next.svg');
+    width: 11px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 16px;
     border-radius: 50%;
     box-shadow: 0 0 0 3px $gray;
+    font-size: 0;
     background-color: transparent;
+    font-size: 0;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease,
+                background-image 0.3s ease;
+
+    &:hover {
+      box-shadow:  0 0 0 3px #ffae94;
+      background-color: #fff2ed;
+      background-image: url('../images/icons/arrow-next-hower.svg');
+    }
+
+    &:focus-visible {
+      border: 3px solid $gray;
+      box-shadow:  0 0 0 3px rgba(255, 104, 56, 0.7);
+    }
+
+    &:active {
+      background-color: rgb(255, 242, 237);
+      box-shadow: none;
+      background-image: url('../images/icons/arrow-next-hower.svg');
+    }
   }
 
   &__testimonial {
@@ -549,10 +622,11 @@
       position: absolute;
       top: 0;
       left: 0;
-      background-image: url('../images/icons/quote.svg');
+      background-image: url('../images/icons/icon-quote.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      fill: $gray;
       width: 25px;
       height: 20px;
     }
@@ -562,7 +636,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background-image: url('../images/icons/quote.svg');
+      background-image: url('../images/icons/icon-quote.svg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -593,6 +667,9 @@
   .slick-dots {
     display: flex;
     justify-content: center;
+    background-color: transparent;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease,
+                background-image 0.3s ease;
 
     li {
       button {
@@ -604,6 +681,8 @@
         background-color: $gray;
         transition: background-color 0.3s ease-in;
         z-index: 10;
+        transition: box-shadow 0.3s ease, background-color 0.3s ease,
+                background-image 0.3s ease;
 
         &:hover {
           background-color: #fff2ed;
@@ -611,10 +690,11 @@
           opacity: 0.7;
         }
 
-        &:focus {
-          background-color: $gray;
-          box-shadow: 0 0 0 2px $accent;
-        }
+        &:focus-visible {
+          background-color: #c2c2c2;
+          -webkit-box-shadow: 0 0 0 2px #ff6838;
+          box-shadow: 0 0 0 2px #ff6838;
+      }
 
         &:active {
           background-color: #ffae94;
@@ -629,42 +709,79 @@
         background-color: $accent;
       }
     }
+
+    .slick-dots li.slick-active button:hover {
+      box-shadow: 0 0 0 3px #ff6838;
+      background-color: #ff6838;
+    }
   }
 }
 
-button.slick-prev.slick-arrow {
-  position: absolute;
-  bottom: -11px;
-  left: 386px;
-  background-image: url('../images/icons/perv.svg');
-  width: 11px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 17px;
-  border-radius: 50%;
-  box-shadow: 0 0 0 3px $gray;
-  background-color: transparent;
+/* ---------------------- app --------------------- */
 
-  &:hover {
-    background-color: rgb(255, 242, 237);
-    box-shadow: 0 0 0 3px rgb(255, 174, 148);
+.app {
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  &__description {
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: -12px;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 130%;
+    color: $dblue;
+    margin-bottom: 45px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: $defalt;
+    margin-bottom: 30px;
+  }
+
+  &__media {
+    display: inline-block;
+    width: 120px;
+    height: 40;
+  }
+
+  &__media:not(:last-child) {
+    margin-right: 22px;
+  }
+
+  &__grafica {
+    max-width: 570px;
+    width: 100%;
+    height: 380px;
+  }
+
+  &__media {
+    transition: box-shadow 0.3s ease-in;
+
+    &:hover {
+      border-radius: 5px;
+      box-shadow: 0 3px 15px 0 $dblue;
+    }
+
+    &:active {
+      border-radius: 5px;
+      box-shadow: 0 3px 15px 0 rgba(255, 104, 56, 0.7);;
+   }
 }
 
 
-
-button.slick-next.slick-arrow {
-  position: absolute;
-  bottom: -11px;
-  right: 384px;
-  background-image: url('../images/icons/next.svg');
-  width: 11px;
-  height: 20px;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
+
+/* ---------------------- /app --------------------- */
 
 /* ---------------------- footer --------------------- */
 
@@ -674,20 +791,19 @@ button.slick-next.slick-arrow {
 
 .footer-top {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  column-gap: 70px;
   padding-bottom: 60px;
+  width: auto;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 200px;
 
   &__label {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   &__input {
@@ -743,7 +859,6 @@ button.slick-next.slick-arrow {
 
 .address {
   font-size: 16px;
-  margin-bottom: 15px;
 }
 
 .how,
@@ -751,7 +866,7 @@ button.slick-next.slick-arrow {
 .news,
 .address {
   &__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 
@@ -760,9 +875,27 @@ button.slick-next.slick-arrow {
   column-gap: 7px;
 }
 
+.how__link,
+.about__link,
+.news__link {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+.address .foot-text {
+  margin-bottom: 20px;
+}
+
 .address__link-data {
   display: block;
   font-size: 16px;
+  line-height: 1.3;
+
+}
+
+.address__link-data {
+  margin-bottom: 11px;
 }
 
 .social {
