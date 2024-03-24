@@ -3,7 +3,6 @@
 @import 'vars';
 @import 'libs';
 @import 'reset';
-@import 'media';
 @import 'global';
 
 /* ------------------Header--------------- */
@@ -148,6 +147,9 @@
 .intro__grafica {
   max-width: 560px;
   width: 100%;
+  height: 660px;
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 
 
@@ -213,6 +215,7 @@
 
   &__categorie-link {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     column-gap: 10px;
     padding: 13px 32px;
@@ -529,7 +532,7 @@
     background-position: center center;
     width: 17px;
     height: 17px;
-    padding: 17px;
+    padding: 16px;
     border-radius: 50%;
     box-shadow:  0 0 0 3px $gray;
     background-color: transparent;
@@ -540,7 +543,7 @@
     &:hover {
       box-shadow:  0 0 0 3px #ffae94;
       background-color: #fff2ed;
-      background-image: url(../images/icons/icion-prev-hover.svg);
+      background-image: url('../images/icons/icion-prev-hover.svg');
     }
 
     &:focus-visible {
@@ -578,7 +581,7 @@
     &:hover {
       box-shadow:  0 0 0 3px #ffae94;
       background-color: #fff2ed;
-      background-image: url('../images/icons/arrow-next-hower.svg');
+      background-image: url('../images/icons/icon-next-hover.svg');
     }
 
     &:focus-visible {
@@ -589,7 +592,7 @@
     &:active {
       background-color: rgb(255, 242, 237);
       box-shadow: none;
-      background-image: url('../images/icons/arrow-next-hower.svg');
+      background-image: url('../images/icons/icon-next-hover.svg');
     }
   }
 
@@ -971,4 +974,5 @@
 
 /* ---------------------- /footer --------------------- */
 
+@import 'media';
 

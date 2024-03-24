@@ -210,7 +210,7 @@ a {
       fill: $accent;
     }
 
-    &:focus {
+    &:focus-visible {
       color: $dblue;
       fill: $dblue;
       border-radius: 5px;

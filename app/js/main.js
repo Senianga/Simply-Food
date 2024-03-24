@@ -1,11 +1,19 @@
 $(function(){
 
 
- $('.foods__categorie').on('click', function() {
+ const navBtn = document.querySelectorAll(".foods__categorie-link");
 
-  $('foods__categorie').removeClass('foods__categorie--active');
-  $(this).addClass('foods__categorie--active');
+ navBtn.forEach(function(item) {
+    item.addEventListener("click", function(){
+        let currentBtn = item;
 
+        navBtn.forEach(function(item) {
+          item.classList.remove('foods__categorie-link--active');
+        });
+
+        currentBtn.classList.add('foods__categorie-link--active');
+
+    });
  });
 
 
