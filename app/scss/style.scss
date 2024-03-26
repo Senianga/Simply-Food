@@ -755,6 +755,7 @@
     display: inline-block;
     width: 120px;
     height: 40;
+    border-radius: 5px;
   }
 
   &__media:not(:last-child) {
@@ -773,6 +774,10 @@
     &:hover {
       border-radius: 5px;
       box-shadow: 0 3px 15px 0 $dblue;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px $accent;
     }
 
     &:active {
