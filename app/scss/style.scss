@@ -38,6 +38,10 @@
   }
 }
 
+.burger {
+  display: none;
+}
+
 .user {
   display: block;
   border-radius: 5px;
@@ -128,6 +132,8 @@
     text-align: center;
   }
 }
+
+
 
 /* ------------------/header--------------- */
 
@@ -794,7 +800,7 @@
 /* ---------------------- footer --------------------- */
 
 .footer {
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 
 .footer-top {
@@ -969,7 +975,7 @@
 }
 
 .footer__bottom {display: block;
-  padding: 30px 0;
+  padding: 30px 0 0;
   text-align: center;
   font-size: 14px;
   line-height: 1;
