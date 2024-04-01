@@ -1,6 +1,5 @@
 $(function(){
 
-
  const navBtn = document.querySelectorAll(".foods__categorie-link");
 
  navBtn.forEach(function(item) {
@@ -26,19 +25,20 @@ $(function(){
 
 //---------------/burger--------------
 
-  $('.slider').slick({
+  $('.feedback__slider.slider').slick({
 
     dots: true,
     arrows:true,
+  }
+);
 
+if (window.matchMedia("(max-width: 576px)").matches) {
+  $('.partners__items-slider.slider').slick({
+
+    dots: true,
+    arrows:false,
   });
-
-  $('.slider').slick({
-    prevArrow: '<button type="button" class="slider__arrow slider__arrow--prev"><span class="button.slick-prev.slick-arrow"></span></button>',
-    nextArrow: '<button type="button" class="slider__arrow slider__arrow--next"><span class="button.slick-next.slick-arrow"></span></button>',
-    appendArrows: '.arrows-wrap'
-  });
-
+};
 
 
   $(".star").rateYo({
