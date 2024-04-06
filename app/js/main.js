@@ -33,10 +33,11 @@ $(function(){
 );
 
 if (window.matchMedia("(max-width: 576px)").matches) {
-  $('.partners__items-slider.slider').slick({
+  $('.partners__wraper-slider.slider').slick({
 
     dots: true,
     arrows:false,
+    fade: true,
   });
 };
 
